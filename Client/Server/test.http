@@ -1,0 +1,17 @@
+POST http://localhost:4000/app/blockedSeats
+Content-Type: application/json
+
+{
+    "id":"60443a109bc0bd40dca2cc9c",
+    "blocked":[]
+}
+###
+
+POST http://localhost:4000/app/searchBus
+Content-Type: application/json
+
+{
+    "boardPoint":"Bangalore",
+    "endPoint":"Chennai",
+    "travelDate":"03/15/2021"
+}

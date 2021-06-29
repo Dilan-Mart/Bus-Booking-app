@@ -1,0 +1,245 @@
+#homeAdvDiv{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    background:linear-gradient(rgb(104, 10, 104),rgb(255, 255, 255));
+
+}
+#homeAdvDiv img{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px 0;
+}
+#homeAdvDiv img:hover{
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 15px 5px ;
+    border-radius: 0 25px;
+}
+/* .signUpDiv{
+    margin: 25px auto;
+    padding: 5px 0;
+    max-width: 480px;
+    min-height: 650px;
+    background: url(../images/toyBus1.jpg),linear-gradient(rgb(0, 0, 0),rgb(96, 97, 98));
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 10px;
+    color: #fff;
+    box-sizing: border-box;
+} */
+form{
+    border: 1px solid darkgray;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#headerContent{
+    background: linear-gradient(rgb(17, 87, 175),rgb(182, 62, 175));
+}
+#logo{
+    transition: 2s;
+}
+.headerNavLink{
+    color: white;
+    background-color: rgb(87, 71, 233);
+    padding: 3px 14px;
+    border-radius: 5px;
+}
+.selected,.headerNavLink:hover{
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(103, 209, 228);
+    color: black;
+}
+#headerContent:hover #logo{
+    transform: rotate(360deg);
+}
+/*Home Services*/
+#mainContentApp{
+    margin: 0 auto;
+}
+
+
+/*Plan your journey*/
+#planJourney{
+    margin: 0px auto;
+    width: max-content;
+}
+#journeyInputs{
+    margin:25px auto;
+}
+#journeyInputs img{
+    border-radius: 25px;
+}
+
+#sourceSelect,#destinationSelect,#startDatePicker,#planBtn{
+    width: 250px;
+    height: 50px;
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*Results Window*/
+
+#resultsWindow{
+    border: 1px solid green;
+    border-radius: 25px 5px;
+    background-color: lightgray;
+    margin: 15px auto;
+    display: none;
+    text-align: center;
+}
+#resultsWindow table{
+    margin: 25px auto;
+}
+#resultsWindow table th,#resultsWindow table td{
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#resultsWindow table th{
+    background-color: lightskyblue;
+}
+/*View and Book seats*/
+
+.includeDriver{
+    width: 600px;
+    height: 320px;
+    margin: 30px 0 0 30px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#driverIcon{border-radius: 25px;}
+
+#lowerBerth,#upperBerth{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.driverIconDiv{
+    width: 13%;
+    margin: 70px 0 0 5px;
+    box-sizing: border-box;
+}
+
+.cot{
+    width: 80px;
+    margin: 10px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+.singleCot{
+    margin: 35px 10px;
+}
+
+.cot:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+/*Booking Summary*/
+#bookingSummary{
+    margin: 30px auto;
+    width: 700px;
+}
+#summaryField{
+    border: 1px solid black;
+}
+#summaryField legend{
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 0 5px;
+    width: max-content;
+}
+#summaryField form{
+    border: none;
+}
+#bookingEntries fieldset{
+    border: 1px solid green;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: max-content;
+    box-sizing: border-box;
+}
+#bookingEntries fieldset legend{
+    font-size: 1.1em;
+    color: darkcyan;
+}
+#bookingEntries fieldset input{
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/*Account Services*/
+
+.accountServices{
+    margin: 50px;
+}
+#signUpBtn,#loginBtn,#logoutBtn{font-size: 1.3em;}
+
+/*Indicators*/
+
+.cal{color:rgba(137, 241, 137, 0.89)}
+
+#planJourneyIndicator,#viewSeatsIndicator,#paymentIndicator,#ticketConfirmationIndicator{
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor:unset;
+}
+
+/*Payment*/
+#cardPaymentForm{
+    border: none;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+#cardPaymentForm p{
+    color: red;
+    margin-left: 5px;
+}
+#cardPaymentForm input,#cardPaymentForm select,#cardPaymentForm button{
+    border-radius: 5px;
+    margin: 0 5px;
+}
+#cardNoDiv input{
+    width:350px
+}
+
+/*Ticket confirmation*/
+#ticketConfirmDiv{
+    margin: 100px auto 10px auto;
+    padding: 10px;
+    border: 2px solid steelblue;
+    width: 80%;
+    background-color: rgba(220, 74, 233, 0.349);
+}
+
+#ticketTable,#passengerTable{
+    margin: 25px auto;
+    width: 100%;
+}
+#ticketTable th,#ticketTable td,#passengerTable th,#passengerTable td{
+    border: 1px solid green;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+#backHomeDiv{
+    margin: auto;
+    width: fit-content;
+}
